@@ -1,15 +1,29 @@
+import urllib.request
+import json 
+import time
 import pandas as pd
 import plotly.express as px
-grabber = pd.DataFrame({"lat":[1,2,3,4,5,6,7,8,9], "lon":[1,2,3,4,5,6,7,8,9], 
-    "second": [1,2,3,4,5,6,7,8,9]})
 
-'''df = px.data.gapminder()
+Data = [[],[],[]]
 
-print(df[["year", "country", "gdpPercap"]])
+i = 0
 
-fig = px.scatter(df, x="gdpPercap", y="lifeExp", animation_frame="year", animation_group="country",
-           size="pop", color="continent", hover_name="country",
-           log_x=True, size_max=55, range_x=[100,100000], range_y=[25,90])'''
+for count in range(500):
+    url = "http://api.open-notify.org/iss-now.json"
+    response = urllib.request.urlopen(url)
+    result = json.loads(response.read())
+    location = result["iss_position"]
+    lat = location['latitude']
+    lon = location['longitude']
+    lat = float(lat)
+    lon = float(lon)
+    Data[0].append(lat)
+    Data[1].append(lon)
+    Data[2].append(i)
+    i += 1
+    time.sleep(1)
+
+grabber = pd.DataFrame({"lat": Data[0], "lon": Data[1], "second":Data[2]})
 
 fig = px.scatter_mapbox(grabber, lat="lat", lon="lon", animation_frame="second")
 fig.update_layout(
