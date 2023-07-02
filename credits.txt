@@ -1,0 +1,16 @@
+(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)
+
+Programmed By: Joseph R. Shumaker
+
+License: https://opensource.org/license/mit/
+
+This project was made as a software library
+specifically for use in a project with my
+co-workers at the Ventura College Tutoring
+Center. 
+
+Please respect the API Limit + Licence
+
+Thank you :)
+
+(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)(*)
