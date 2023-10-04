@@ -6,7 +6,7 @@ The ISS+ project is an exciting endeavor that aims to track the International Sp
 
 The project consists of several key components. Firstly, it employs the ISS API provided by NASA to fetch relevant information about the ISS, including its latitude, longitude, altitude, and other parameters. The API returns the data in JSON format, which is then processed and stored using Pandas data frames.
 
-Using the obtained ISS data, the project dynamically updates and maps the current location of the ISS on a map using Mapbox and Plotly. Mapbox provides a comprehensive mapping platform that allows for interactive and visually appealing visualizations. Plotly, on the other hand, is a powerful graphing library that integrates seamlessly with Mapbox, enabling the creation of rich, interactive maps.
+Using the obtained ISS data, the project dynamically updates and maps the current location of the ISS on a map using Mapbox and Plotly. Mapbox provides a comprehensive mapping platform that allows for interactive and visually appealing visualizations. Plotly, on the other hand, is a powerful graphing library that integrates seamlessly with Mapbox, enabling the creation of rich, interactive maps. u
 
 ## Screenshot
 ![Screenshot 2023-06-28 at 5 17 08 PM](https://github.com/s5y-ux/ISSPlus/assets/59636597/b5b8154e-1267-4ef5-abb7-a2dd7f2a0cd0)
