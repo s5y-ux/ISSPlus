@@ -5,7 +5,7 @@ Programmed By: Joseph R. Shumaker
 License: https://opensource.org/license/mit/
 
 This project was made as a software library
-specifically for use in a project with my
+specifically for use in a project with mym
 co-workers at the Ventura College Tutoring
 Center. 
 
